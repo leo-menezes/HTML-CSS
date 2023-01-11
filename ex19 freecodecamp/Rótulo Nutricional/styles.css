@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;  /* por padrão, o navegador inclui a borda e o padding quando determina o tamanho de um elemento. incluímos box-sizing para deixarmos do jeito que queremos */
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.label {
+    border: 2px solid black;    /* adicionar borda na div de class label */
+    width: 270px;                 /* tamanho da div na página */
+    margin: 20px auto;            /* definir margem -- deixou no centro da tela*/
+    padding: 0 7px;               /* criar espaço em torno do container (preenchimento) */
+}
+
+header h1 {
+    /*font-weight: 800;*/             /* deixou o texto de h1 em NEGRITO */
+    text-align: center;           /* deixar texto no centro */
+    margin: -4px 0;               /* 1º valor: margem superior e inferior - 2º valor: margem esquerda e direita */
+    letter-spacing: 0.15px;       /* pode ser usada para ajustar o espaço entre cada caractere de texto em um elemento */
+}
+
+p {
+    margin: 0;
+}
+
+.bold {
+    font-weight: 800;           /* deixou o texto da CLASS BOLD em NEGRITO */
+}
+
+.divider {
+    border-bottom: 1px solid #888989;  /* borda na parte inferior da div DIVIDER */
+    margin: 2px 0;  /* 1º valor: margem superior e inferior - 2º valor: margem esquerda e direita */
+    clear: right;   /* Isto limpará a propriedade float, empurrando o divisor e qualquer conteúdo abaixo do texto float */
+}
+
+.right {
+    float: right;       /* usada para colocar um elemento à esquerda ou à direita de seu contêiner, permitindo que outro conteúdo (como texto) seja encapsulado em torno dele */
+}
+
+.lg {
+    height: 10px;       /* mantém tamanho uniforme */
+}
+
+.md {
+    height: 5px;
+}
+
+.lg, .md {
+    background-color: black;
+    border: 0;
+}
+
+.sm-text {
+    font-size: 0.85rem;
+}
+
+.calories-info h1 {
+    margin: -5px -2px;      /* 1º valor: margem superior e inferior - 2º valor: margem esquerda e direita */
+    overflow: hidden;       /* evitar que a letra saia da div e acompanha os dados */
+}
+
+.calories-info span {
+    font-size: 1.2em;
+    margin-top: -7px;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) { /* O pseudosseletor :not pode ser usado para selecionar todos os elementos que não correspondem à determinada regra do CSS. */
+    border-bottom: 1px solid #888989;
+}
+
+.dbl-indent {
+    margin-left: 2em;
+}
+
+.note {
+    font-size: 0.6rem;  /* margem */
+    margin: 5px 0;      /* tamanho da fonte */
+    padding: 0 8px;       /* criar espaço em torno do container (preenchimento) */
+    text-indent: -8px;
+}
